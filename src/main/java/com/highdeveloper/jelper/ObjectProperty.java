@@ -28,8 +28,7 @@ public class ObjectProperty {
   public static void copyPropertyValues(Object originObject, Object destinationObject) throws Exception {
 
     if (originObject == null || destinationObject == null) {
-      
-      throw new IllegalArgumentException("Origin and destination objects cannot be null.");
+      return;
     }
     
     Field allOriginFields[];
